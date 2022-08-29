@@ -4,7 +4,7 @@ ARG NOVNC_TAG=v1.3.0
 ARG WEBSOCKIFY_TAG=v0.10.0
     
 ENV VNC_SERVER "localhost:5900" \
-    NOVNC_PORT "6080"
+    NOVNC_PORT 6080
 
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir numpy && \
